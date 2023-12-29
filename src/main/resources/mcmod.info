@@ -1,0 +1,12 @@
+[
+{
+  "modid": "medallions",
+  "name": "Medallions",
+  "description": "Beautify your world with Medalions!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "neckitwin.github.io",
+  "authorList": ["NeckitWin"],
+  "credits": "The Forge and FML guys, for making this example"
+}
+]
