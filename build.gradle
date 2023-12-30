@@ -19,9 +19,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "version"
-group= "net.neckitwin.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "1.0.0"
+group= "net.neckitwin.medallions" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "medallions"
 
 // Активация поддержки Java 8 (без этой строчки будет использоваться Java 6)
 targetCompatibility = sourceCompatibility = JavaVersion.VERSION_1_8

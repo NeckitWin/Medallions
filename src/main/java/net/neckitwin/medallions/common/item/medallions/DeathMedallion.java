@@ -31,9 +31,9 @@ public class DeathMedallion extends Item {
 
             // Применяет пассивные эффекты, если эффекты включены и амулет зачарован
             if (getEffectsEnabled(stack) && getIsCharmed(stack)) {
-                // эффекты силы и скорости
+                // эффекты силы
                 player.addPotionEffect(new net.minecraft.potion.PotionEffect(5, 1, 3));
-                if (world.getWorldTime() % 40 == 0) {
+                if (world.getWorldTime() % 40 == 0) { // урон раз в 2 секунды
                     player.attackEntityFrom(DamageSource.generic, 1);
                 }
             }

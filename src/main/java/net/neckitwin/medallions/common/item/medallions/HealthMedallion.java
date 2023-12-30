@@ -32,7 +32,7 @@ public class HealthMedallion extends Item {
             // Применяет пассивные эффекты, если эффекты включены и амулет зачарован
             if (getEffectsEnabled(stack) && getIsCharmed(stack)) {
                 // эффект регенерации
-                player.addPotionEffect(new net.minecraft.potion.PotionEffect(10, 3, 1));
+                player.addPotionEffect(new net.minecraft.potion.PotionEffect(10, 60, 1));
             }
         }
     }

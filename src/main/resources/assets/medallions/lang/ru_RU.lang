@@ -1,6 +1,7 @@
-itemGroup.medallions=Медальоны
+itemGroup.medallions=Медальоны и Амулеты
 
 item.speedofmedallion.name=Медальон скорости
 item.medallionofpower.name=Медальон силы
 item.deathmedallion.name=Медальон смерти
 item.healthmedallion.name=Медальон Оздоровления
+item.amuletoflightning.name=Амулет молний

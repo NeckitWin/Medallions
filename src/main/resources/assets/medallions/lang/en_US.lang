@@ -1,6 +1,7 @@
-itemGroup.medallions=Medallions
+itemGroup.medallions=Medallions & Amulets
 
 item.speedofmedallion.name=Speed of Medallion
 item.medallionofpower.name=Medallion of Power
 item.deathmedallion.name=Medallion of Death
-item.healthmedallion.name=Medallion of Health
+item.healthmedallion.name=Health Medallion
+item.amuletoflightning.name=Amulet of Lightning
