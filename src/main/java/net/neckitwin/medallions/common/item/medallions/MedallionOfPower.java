@@ -1,4 +1,4 @@
-package net.neckitwin.medallions.common.item;
+package net.neckitwin.medallions.common.item.medallions;
 
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
@@ -6,12 +6,11 @@ import net.minecraft.item.ItemStack;
 import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
 
-public class SpeedOfMedallion extends Item {
+public class MedallionOfPower extends Item {
     private boolean effectsEnabled = false;
-
-    public SpeedOfMedallion() {
-        setUnlocalizedName("speedofmedallion");
-        setTextureName(Medallions.MOD_ID + ":speedofmedallion");
+    public MedallionOfPower() {
+        setUnlocalizedName("medallionofpower");
+        setTextureName("medallionofpower");
         setMaxStackSize(1);
         setCreativeTab(ModTab.INSTANCE);
     }
@@ -34,7 +33,7 @@ public class SpeedOfMedallion extends Item {
         }
     }
 
-    // выключить эффекты при клике правой кнопкой мыши
+    // Включить/выключить эффекты при клике правой кнопкой мыши
     @Override
     public ItemStack onItemRightClick(ItemStack stack, net.minecraft.world.World world, net.minecraft.entity.player.EntityPlayer player) {
         if (player.isSneaking()) {
