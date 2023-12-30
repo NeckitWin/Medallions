@@ -31,7 +31,7 @@ public class MedallionOfPower extends Item {
             // Применяет пассивные эффекты, если эффекты включены и амулет зачарован
             if (getEffectsEnabled(stack) && getIsCharmed(stack)) {
                 // эффекты силы и скорости
-                player.addPotionEffect(new net.minecraft.potion.PotionEffect(5, 1, 2));
+                player.addPotionEffect(new net.minecraft.potion.PotionEffect(5, 1, 1));
                 player.addPotionEffect(new net.minecraft.potion.PotionEffect(1, 1, 1));
             }
         }

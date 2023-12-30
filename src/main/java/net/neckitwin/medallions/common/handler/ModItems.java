@@ -3,6 +3,7 @@ package net.neckitwin.medallions.common.handler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.neckitwin.medallions.common.item.medallions.*;
 import net.neckitwin.medallions.common.item.amulets.*;
+import net.neckitwin.medallions.common.item.armors.*;
 
 public class ModItems {
     public static final SpeedOfMedallion SPEED_OF_MEDALLION = new SpeedOfMedallion();
@@ -10,11 +11,13 @@ public class ModItems {
     public static final DeathMedallion DEATH_MEDALLION = new DeathMedallion();
     public static final HealthMedallion HEALTH_MEDALLION = new HealthMedallion();
     public static final AmuletOfLightning AMULET_OF_LIGHTNING = new AmuletOfLightning();
+    public static final InvisibilityCloak INVISIBILITY_CLOAK = new InvisibilityCloak();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
         GameRegistry.registerItem(DEATH_MEDALLION, "deathmedallion");
         GameRegistry.registerItem(HEALTH_MEDALLION, "healthmedallion");
         GameRegistry.registerItem(AMULET_OF_LIGHTNING, "amuletoflightning");
+        GameRegistry.registerItem(INVISIBILITY_CLOAK, "invisibilitycloak");
     }
 }

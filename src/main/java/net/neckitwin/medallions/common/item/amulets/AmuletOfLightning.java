@@ -7,12 +7,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
+import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
 
 public class AmuletOfLightning extends Item {
     public AmuletOfLightning() {
         setUnlocalizedName("amuletoflightning");
-        setTextureName("medallions:amuletoflightning");
+        setTextureName(Medallions.MOD_ID + ":amuletoflightning");
         setMaxStackSize(1);
         setCreativeTab(ModTab.INSTANCE);
     }
@@ -33,7 +34,7 @@ public class AmuletOfLightning extends Item {
                 if (!player.capabilities.isCreativeMode) {
                     player.setHealth(player.getHealth() - 4);
                     // Накидываем эффект иссушения на 10 секунд
-                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(20, 300, 0));
+                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(20, 200, 0));
                 }
             }
         }
