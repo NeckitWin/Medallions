@@ -14,7 +14,7 @@ public class ModItems {
     public static final InvisibilityCloak INVISIBILITY_CLOAK = new InvisibilityCloak();
     public static final PotionOfSatiety AMULET_OF_SATIETY = new PotionOfSatiety();
     public static final MinersMedallion MINERS_MEDALLION = new MinersMedallion();
-    public static final NightMedallion NIGHT_MEDALLION = new NightMedallion();
+    public static final ShadowyMedallion SHADOWY_MEDALLION = new ShadowyMedallion();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -24,6 +24,6 @@ public class ModItems {
         GameRegistry.registerItem(INVISIBILITY_CLOAK, "invisibilitycloak");
         GameRegistry.registerItem(AMULET_OF_SATIETY, "amuletofsatiety");
         GameRegistry.registerItem(MINERS_MEDALLION, "minersmedallion");
-        GameRegistry.registerItem(NIGHT_MEDALLION, "nightmedallion");
+        GameRegistry.registerItem(SHADOWY_MEDALLION, "nightmedallion");
     }
 }

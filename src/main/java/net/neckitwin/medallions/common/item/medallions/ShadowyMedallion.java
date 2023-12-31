@@ -7,12 +7,12 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
 
-public class NightMedallion extends Item {
+public class ShadowyMedallion extends Item {
     private static final String NBT_EFFECTS_ENABLED = "EffectsEnabled";
     private static final String NBT_IS_CHARMED = "IsCharmed";
-    public NightMedallion() {
-        setUnlocalizedName("nightmedallion");
-        setTextureName("medallions:nightmedallion");
+    public ShadowyMedallion() {
+        setUnlocalizedName("shadowymedallion");
+        setTextureName(Medallions.MOD_ID+"shadowymedallion");
         setMaxStackSize(1);
         setCreativeTab(ModTab.INSTANCE);
     }
