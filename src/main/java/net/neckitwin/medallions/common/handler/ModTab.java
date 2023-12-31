@@ -16,6 +16,6 @@ public class ModTab extends CreativeTabs {
     @Override
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem() {
-        return ModItems.SPEED_OF_MEDALLION;
+        return ModItems.SHADOWY_MEDALLION;
     }
 }
