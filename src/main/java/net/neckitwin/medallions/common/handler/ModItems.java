@@ -24,6 +24,6 @@ public class ModItems {
         GameRegistry.registerItem(INVISIBILITY_CLOAK, "invisibilitycloak");
         GameRegistry.registerItem(AMULET_OF_SATIETY, "amuletofsatiety");
         GameRegistry.registerItem(MINERS_MEDALLION, "minersmedallion");
-        GameRegistry.registerItem(SHADOWY_MEDALLION, "nightmedallion");
+        GameRegistry.registerItem(SHADOWY_MEDALLION, "shadowymedallion");
     }
 }

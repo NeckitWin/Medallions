@@ -12,7 +12,7 @@ public class ShadowyMedallion extends Item {
     private static final String NBT_IS_CHARMED = "IsCharmed";
     public ShadowyMedallion() {
         setUnlocalizedName("shadowymedallion");
-        setTextureName(Medallions.MOD_ID+"shadowymedallion");
+        setTextureName(Medallions.MOD_ID+":shadowymedallion");
         setMaxStackSize(1);
         setCreativeTab(ModTab.INSTANCE);
     }
