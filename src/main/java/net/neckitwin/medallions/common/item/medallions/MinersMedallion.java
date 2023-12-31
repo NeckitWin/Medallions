@@ -4,16 +4,15 @@ import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.DamageSource;
 import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
 
-public class HealthMedallion extends Item {
+public class MinersMedallion extends Item {
     private static final String NBT_EFFECTS_ENABLED = "EffectsEnabled";
     private static final String NBT_IS_CHARMED = "IsCharmed";
-    public HealthMedallion() {
-        setUnlocalizedName("healthmedallion");
-        setTextureName(Medallions.MOD_ID + ":healthmedallion");
+    public MinersMedallion() {
+        setUnlocalizedName("minersmedallion");
+        setTextureName(Medallions.MOD_ID + ":minersmedallion");
         setMaxStackSize(1);
         setCreativeTab(ModTab.INSTANCE);
     }
@@ -31,12 +30,7 @@ public class HealthMedallion extends Item {
 
             // Применяет пассивные эффекты, если эффекты включены и амулет зачарован
             if (getEffectsEnabled(stack) && getIsCharmed(stack)) {
-                // эффект регенерации, добавляет 5 секунд к длительности каждые 5 секунд
-                if (world.getWorldTime() % 100 == 0) {
-                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(10, 100, 0));
-                }
-                // эффект голода
-                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(17, 1, 1));
+                player.addPotionEffect(new net.minecraft.potion.PotionEffect(3, 1, 1));
             }
         }
     }

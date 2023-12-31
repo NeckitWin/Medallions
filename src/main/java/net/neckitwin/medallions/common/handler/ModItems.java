@@ -12,6 +12,8 @@ public class ModItems {
     public static final HealthMedallion HEALTH_MEDALLION = new HealthMedallion();
     public static final AmuletOfLightning AMULET_OF_LIGHTNING = new AmuletOfLightning();
     public static final InvisibilityCloak INVISIBILITY_CLOAK = new InvisibilityCloak();
+    public static final PotionOfSatiety AMULET_OF_SATIETY = new PotionOfSatiety();
+    public static final MinersMedallion MINERS_MEDALLION = new MinersMedallion();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -19,5 +21,7 @@ public class ModItems {
         GameRegistry.registerItem(HEALTH_MEDALLION, "healthmedallion");
         GameRegistry.registerItem(AMULET_OF_LIGHTNING, "amuletoflightning");
         GameRegistry.registerItem(INVISIBILITY_CLOAK, "invisibilitycloak");
+        GameRegistry.registerItem(AMULET_OF_SATIETY, "amuletofsatiety");
+        GameRegistry.registerItem(MINERS_MEDALLION, "minersmedallion");
     }
 }
