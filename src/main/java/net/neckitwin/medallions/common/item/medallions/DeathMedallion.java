@@ -8,7 +8,7 @@ import net.minecraft.util.DamageSource;
 import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
 
-public class DeathMedallion extends Item {
+public class    DeathMedallion extends Item {
     private static final String NBT_EFFECTS_ENABLED = "EffectsEnabled";
     private static final String NBT_IS_CHARMED = "IsCharmed";
     public DeathMedallion() {

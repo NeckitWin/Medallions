@@ -6,6 +6,7 @@ item.deathmedallion.name=Медальон смерти
 item.healthmedallion.name=Медальон Оздоровления
 item.amuletoflightning.name=Амулет молний
 item.invisibilitycloak.name=Плащ невидимости
+tooltip.invisibilitycloak.name=Получите магию невидимости одев на себя данный плащ!\n\тест
 item.potionofsatiety.name=Микстура сытости
 item.minersmedallion.name=Медальон шахтера
 item.shadowymedallion.name=Теневой медальон
