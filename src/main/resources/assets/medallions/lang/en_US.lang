@@ -6,7 +6,11 @@ item.deathmedallion.name=Medallion of Death
 item.healthmedallion.name=Health Medallion
 item.amuletoflightning.name=Amulet of Lightning
 item.invisibilitycloak.name=Invisibility Cloak
-tooltip.invisibilitycloak.name=Get the power of invisibility by wearing this cloak!
 item.potionofsatiety.name=Potion of Satiety
 item.minersmedallion.name=Miner's Medallion
 item.shadowymedallion.name=Shadowy Medallion
+item.amuletofteleportation.name=Amulet of Teleportation
+
+# tooltips
+
+tooltip.invisibilitycloak.name=Get the power of invisibility by wearing this cloak!
