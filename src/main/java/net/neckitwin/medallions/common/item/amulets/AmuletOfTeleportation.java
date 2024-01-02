@@ -32,8 +32,12 @@ public class AmuletOfTeleportation extends Item {
                 // Отнимаем 1 хп у игрока если он не в креативе
                 if (!player.capabilities.isCreativeMode) {
                     player.setHealth(player.getHealth() - 2);
-                    // Накидываем эффект голода на 20 секунд
-                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(17, 400, 0));
+                    // Накидываем эффект голода на 10 секунд
+                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(17, 200, 0));
+                    // эффект головокружения на 5 секунд
+                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(9, 100, 0));
+                    // эффект слепоты на секунду
+                    player.addPotionEffect(new net.minecraft.potion.PotionEffect(15, 20, 0));
                 }
             }
         }
