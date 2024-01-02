@@ -17,6 +17,7 @@ public class ModItems {
     public static final ShadowyMedallion SHADOWY_MEDALLION = new ShadowyMedallion();
     public static final AmuletOfTeleportation AMULET_OF_TELEPORTATION = new AmuletOfTeleportation();
     public static final AmuletOfFlight AMULET_OF_FLIGHT = new AmuletOfFlight();
+    public static final WeatherAmulet WEATHER_AMULET = new WeatherAmulet();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -29,5 +30,6 @@ public class ModItems {
         GameRegistry.registerItem(SHADOWY_MEDALLION, "shadowymedallion");
         GameRegistry.registerItem(AMULET_OF_TELEPORTATION, "amuletofteleportation");
         GameRegistry.registerItem(AMULET_OF_FLIGHT, "amuletofflight");
+        GameRegistry.registerItem(WEATHER_AMULET, "weatheramulet");
     }
 }
