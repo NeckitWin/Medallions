@@ -12,6 +12,11 @@ item.shadowymedallion.name=Shadowy Medallion
 item.amuletofteleportation.name=Amulet of Teleportation
 item.amuletofflight.name=Amulet of Flight
 item.weatheramulet.name=Weather Amulet
+item.bootsabyss.name=Boots of the Abyss
+
+# tiles
+
+tile.megachest.name=Mega Chest
 
 # tooltips
 

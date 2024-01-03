@@ -1,6 +1,7 @@
 package net.neckitwin.medallions.common.handler;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.MinecraftForge;
 import net.neckitwin.medallions.common.item.medallions.*;
 import net.neckitwin.medallions.common.item.amulets.*;
 import net.neckitwin.medallions.common.item.armors.*;
@@ -18,6 +19,7 @@ public class ModItems {
     public static final AmuletOfTeleportation AMULET_OF_TELEPORTATION = new AmuletOfTeleportation();
     public static final AmuletOfFlight AMULET_OF_FLIGHT = new AmuletOfFlight();
     public static final WeatherAmulet WEATHER_AMULET = new WeatherAmulet();
+    public static final BootsAbyss BOOTS_ABYSS = new BootsAbyss();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -31,5 +33,6 @@ public class ModItems {
         GameRegistry.registerItem(AMULET_OF_TELEPORTATION, "amuletofteleportation");
         GameRegistry.registerItem(AMULET_OF_FLIGHT, "amuletofflight");
         GameRegistry.registerItem(WEATHER_AMULET, "weatheramulet");
+        GameRegistry.registerItem(BOOTS_ABYSS, "bootsabyss");
     }
 }
