@@ -1,10 +1,10 @@
 package net.neckitwin.medallions.common.handler;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraftforge.common.MinecraftForge;
 import net.neckitwin.medallions.common.item.medallions.*;
 import net.neckitwin.medallions.common.item.amulets.*;
 import net.neckitwin.medallions.common.item.armors.*;
+import net.neckitwin.medallions.common.item.tools.*;
 
 public class ModItems {
     public static final SpeedOfMedallion SPEED_OF_MEDALLION = new SpeedOfMedallion();
@@ -21,6 +21,7 @@ public class ModItems {
     public static final WeatherAmulet WEATHER_AMULET = new WeatherAmulet();
     public static final BootsAbyss BOOTS_ABYSS = new BootsAbyss();
     public static final FireMedallion FIRE_MEDALLION = new FireMedallion();
+    public static final FireStaff FIRE_STAFF = new FireStaff();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -36,5 +37,6 @@ public class ModItems {
         GameRegistry.registerItem(WEATHER_AMULET, "weatheramulet");
         GameRegistry.registerItem(BOOTS_ABYSS, "bootsabyss");
         GameRegistry.registerItem(FIRE_MEDALLION, "firemedallion");
+        GameRegistry.registerItem(FIRE_STAFF, "firestaff");
     }
 }
