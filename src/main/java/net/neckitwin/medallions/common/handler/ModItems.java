@@ -20,6 +20,7 @@ public class ModItems {
     public static final AmuletOfFlight AMULET_OF_FLIGHT = new AmuletOfFlight();
     public static final WeatherAmulet WEATHER_AMULET = new WeatherAmulet();
     public static final BootsAbyss BOOTS_ABYSS = new BootsAbyss();
+    public static final FireMedallion FIRE_MEDALLION = new FireMedallion();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -34,5 +35,6 @@ public class ModItems {
         GameRegistry.registerItem(AMULET_OF_FLIGHT, "amuletofflight");
         GameRegistry.registerItem(WEATHER_AMULET, "weatheramulet");
         GameRegistry.registerItem(BOOTS_ABYSS, "bootsabyss");
+        GameRegistry.registerItem(FIRE_MEDALLION, "firemedallion");
     }
 }
