@@ -27,8 +27,15 @@ public class AngelWings extends ItemArmor {
                 player.motionX = lookVec.xCoord * speedMultiplier;
                 player.motionY = lookVec.yCoord * speedMultiplier;
                 player.motionZ = lookVec.zCoord * speedMultiplier;
+
+                // Игрок не может лететь выше высоты мира
+                if (player.posY > world.getHeight()) {
+                    player.motionY = 0;
+                }
+            }
+
+
             }// При падении с высоты, игрок не разбивается
             player.fallDistance = 0;
         }
     }
-}
