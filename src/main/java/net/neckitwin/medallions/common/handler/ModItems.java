@@ -5,6 +5,7 @@ import net.neckitwin.medallions.common.item.medallions.*;
 import net.neckitwin.medallions.common.item.amulets.*;
 import net.neckitwin.medallions.common.item.armors.*;
 import net.neckitwin.medallions.common.item.tools.*;
+import net.neckitwin.medallions.common.item.*;
 
 public class ModItems {
     public static final SpeedOfMedallion SPEED_OF_MEDALLION = new SpeedOfMedallion();
@@ -22,6 +23,7 @@ public class ModItems {
     public static final FireMedallion FIRE_MEDALLION = new FireMedallion();
     public static final FireStaff FIRE_STAFF = new FireStaff();
     public static final AngelWings ANGEL_WINGS = new AngelWings();
+    public static final ItemEnderBag ENDER_BAG = new ItemEnderBag();
     public static void register() {
         GameRegistry.registerItem(SPEED_OF_MEDALLION, "speedofmedallion");
         GameRegistry.registerItem(MEDALLION_OF_POWER, "medallionofpower");
@@ -38,5 +40,6 @@ public class ModItems {
         GameRegistry.registerItem(FIRE_MEDALLION, "firemedallion");
         GameRegistry.registerItem(FIRE_STAFF, "firestaff");
         GameRegistry.registerItem(ANGEL_WINGS, "angelwings");
+        GameRegistry.registerItem(ENDER_BAG, "enderbag");
     }
 }
