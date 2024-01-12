@@ -57,6 +57,7 @@ public class TileRandomGenerator extends TileEntity{
                 if (heldStack.stackSize <= 0) {
                     heldStack = null;
                 }
+                System.out.println(stack.stackSize);
             }
         } else { // Если в тайле есть предмет
             // Если предмет в руке совпадает с предметом в тайле
@@ -65,14 +66,20 @@ public class TileRandomGenerator extends TileEntity{
                 stack.stackSize++;
                 // Убираем из руки игрока предмет
                 heldStack.stackSize--;
+                // Вывод в консоль количества предметов в тайле
+                System.out.println(stack.stackSize);
             } else {
                 // Удаляем предмет из тайла в количестве 1 шт.
                 stack.stackSize--;
-                // Отдаём предмет игроку в количестве 1 шт.
-                player.inventory.addItemStackToInventory(stack.copy());
+                // Узнаем, какой предмет был в тайле
+                ItemStack copy = stack.copy();
+                copy.stackSize = 1;
+                // Добавляем предмет в инвентарь игрока
+                player.inventory.addItemStackToInventory(copy);
                 // Обновление каждого слота в инвенторе игрока
                 player.inventoryContainer.detectAndSendChanges();
                 // Если в тайле не осталось предметов, обнуляем его
+                System.out.println(stack.stackSize);
                 if (stack.stackSize <= 0) {
                     stack = null;
                 }
