@@ -32,8 +32,9 @@ public class BlockRandomGenerator extends BlockContainer{
             if (tile instanceof TileRandomGenerator){
                 // Создаём объект нашего TileEntity
                 TileRandomGenerator storage = (TileRandomGenerator) tile;
-                // Передаём игрока и то, что он держит в руке
-                storage.handleInputStack(activator, activator.getHeldItem());
+                // Если игрок зажимает Shift, то будет передаваться весь стек
+                    // Передаём игрока и то, что он держит в руке
+                    storage.handleInputStack(activator, activator.getHeldItem(), 1);
             }
         }
         return true;
