@@ -67,7 +67,7 @@ public class TileRandomGenerator extends TileEntity{
                 stack.stackSize += n;
                 // Убираем из руки игрока предмет
                 heldStack.stackSize -= n;
-                else {
+                } else {
                     System.out.println("Stack is full");
                 }
             } else {
