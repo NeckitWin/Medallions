@@ -6,14 +6,11 @@ import net.neckitwin.medallions.common.block.*;
 import net.neckitwin.medallions.common.tile.*;
 
 public class ModBlocks {
-    public static final BlockMegaChest MEGA_CHEST = new BlockMegaChest();
-    public static final BlockRandomGenerator RANDOM_GENERATOR = new BlockRandomGenerator();
+    public static final BlockInfStorage INFINITE_STORAGE = new BlockInfStorage();
     public static void register() {
         // Блоки
-        GameRegistry.registerBlock(MEGA_CHEST, "megachest");
-        GameRegistry.registerBlock(RANDOM_GENERATOR, "randomgenerator");
+        GameRegistry.registerBlock(INFINITE_STORAGE, "infinitestorage");
         // Тайлы
-        GameRegistry.registerTileEntity(TileMegaChest.class, Medallions.MOD_ID + ":tilemegachest");
-        GameRegistry.registerTileEntity(TileRandomGenerator.class, Medallions.MOD_ID + ":tilerandomgenerator");
+        GameRegistry.registerTileEntity(TileInfStorage.class, Medallions.MOD_ID + ":tileinfinitestorage");
     }
 }

@@ -7,19 +7,19 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.neckitwin.medallions.Medallions;
 import net.neckitwin.medallions.common.handler.ModTab;
-import net.neckitwin.medallions.common.tile.TileRandomGenerator;
+import net.neckitwin.medallions.common.tile.TileInfStorage;
 
-public class BlockRandomGenerator extends BlockContainer{
-    public BlockRandomGenerator() {
+public class BlockInfStorage extends BlockContainer{
+    public BlockInfStorage() {
         super(Material.wood);
-        setBlockName("randomgenerator");
-        setBlockTextureName(Medallions.MOD_ID + ":randomgenerator");
+        setBlockName("infinitestorage");
+        setBlockTextureName(Medallions.MOD_ID + ":infinitestorage");
         setCreativeTab(ModTab.INSTANCE);
     }
     // Создание TileEntity
     @Override
     public TileEntity createNewTileEntity(World world, int metadata){
-        return new TileRandomGenerator();
+        return new TileInfStorage();
     }
 
     @Override
@@ -29,9 +29,9 @@ public class BlockRandomGenerator extends BlockContainer{
             // Получить корды блока
             TileEntity tile = world.getTileEntity(x,y,z);
             // Проверка на то, что это TileEntity, который нам нужен
-            if (tile instanceof TileRandomGenerator){
+            if (tile instanceof TileInfStorage){
                 // Создаём объект нашего TileEntity
-                TileRandomGenerator storage = (TileRandomGenerator) tile;
+                TileInfStorage storage = (TileInfStorage) tile;
                 // Если игрок зажимает Shift, то будет передаваться весь стек
                     // Передаём игрока и то, что он держит в руке
                     storage.handleInputStack(activator, activator.getHeldItem(), 1);

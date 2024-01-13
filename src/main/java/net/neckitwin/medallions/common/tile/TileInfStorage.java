@@ -5,9 +5,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.Constants;
-import org.lwjgl.Sys;
 
-public class TileRandomGenerator extends TileEntity{
+public class TileInfStorage extends TileEntity{
     private ItemStack stack;
     private static final String INV_TAG = "Inventory";
     // Записываем данные тайла в чанк
